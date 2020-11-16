@@ -31,7 +31,7 @@ public class InMemoryTeamRepository implements TeamRepository{
     }
 
     @Override
-    public Optional<TeamEntity> findByCrator(UUID creator) {
+    public Optional<TeamEntity> findByCreator(UUID creator) {
         return inMemory.values().stream()
                 .filter(team -> team.getCreator().equals(creator)).findAny();
     }

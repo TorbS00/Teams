@@ -22,8 +22,8 @@ public class FindTeam {
         return repository.findByName(name);
     }
 
-    public Optional<TeamEntity> findByCrator(final UUID creator) {
-        return repository.findByCrator(creator);
+    public Optional<TeamEntity> findByCreator(final UUID creator) {
+        return repository.findByCreator(creator);
     }
 
 

@@ -14,7 +14,7 @@ public interface TeamRepository {
     TeamEntity create(TeamEntity team);
     TeamEntity delete(TeamEntity team);
     Optional<TeamEntity> findByName(String name);
-    Optional<TeamEntity> findByCrator(UUID creator);
+    Optional<TeamEntity> findByCreator(UUID creator);
     Set<TeamEntity> findAllTeams();
 
 }
