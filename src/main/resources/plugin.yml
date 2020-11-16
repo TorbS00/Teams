@@ -1,0 +1,6 @@
+name: Teams
+version: ${project.version}
+main: com.github.beastyboo.teams.application.TeamPlugin
+authors: [BeastCraft3, BeastyBoo]
+description: A simple team plugin.
+website: https://github.com/BeastyBoo
