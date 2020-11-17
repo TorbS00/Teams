@@ -24,7 +24,7 @@ public class CreateTeam {
             throw new TeamAlreadyExistsException(team.getName());
         }
 
-        if(repository.findByCrator(team.getCreator()).isPresent()) {
+        if(repository.findByCreator(team.getCreator()).isPresent()) {
             throw new CreatorAlreadyExistsException(team.getCreator().toString());
         }
 

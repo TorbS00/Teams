@@ -25,7 +25,7 @@ public class DeleteTeam {
             throw new TeamAlreadyExistsException(team.getName() + " could not be found..");
         }
 
-        if(repository.findByCrator(team.getCreator()) == null) {
+        if(repository.findByCreator(team.getCreator()) == null) {
             throw new CreatorAlreadyExistsException(team.getCreator().toString() + " is not the creator of this team..");
         }
 
